@@ -1,155 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brixsten WaveCraft | Mastering Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brixstem Soundcraft</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0fdf4;
-      color: #111;
-      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      background-color: #065f46;
-      color: white;
-      padding: 2rem 1rem;
+      background-color: #006401;
+      padding: 40px 20px;
       text-align: center;
-      animation: fadeInDown 1s ease-out;
+      border-bottom: 5px solid #00ff5e;
     }
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 2.5rem;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      color: #e0ffe0;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #047857;
-      padding: 1rem;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      animation: slideUp 1.5s ease-out;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 600px;
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
+    .services, .pricing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .box {
+      background-color: #111;
+      border-left: 5px solid #00ff5e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .box h3 {
+      margin-top: 0;
+      color: #00ff5e;
+    }
     .cta {
-      margin-top: 2rem;
+      text-align: center;
+      margin-top: 40px;
     }
     .cta a {
-      background-color: #10b981;
-      color: white;
-      padding: 1rem 2rem;
+      background-color: #00ff5e;
+      color: #000;
+      padding: 12px 24px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
     .cta a:hover {
-      background-color: #059669;
+      background-color: #00cc4d;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: #065f46;
-      color: white;
-      animation: fadeInUp 2s ease-out;
-    }
-
-    /* ANIMATIONS */
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      padding: 20px;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Brixsten WaveCraft</h1>
-    <p>Professional Song Mastering That Elevates Your Sound</p>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Samples</a>
-    <a href="#">Pricing</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <div class="hero">
-    <h2>Your Sound, Perfected</h2>
-    <p>We master your tracks with precision and creativity, ensuring they're ready for every platform — from Spotify to the big stage. Let your music speak professionally.</p>
-    <div class="cta">
-      <a href="#">Get Started</a>
+    <h1>Brixstem Soundcraft</h1>
+    <p>Professional Song Mastering Services</p>
+  </header>  <div class="section">
+    <h2>What We Do</h2>
+    <div class="services">
+      <div class="box">
+        <h3>Mix Review</h3>
+        <p>Detailed feedback to help you get the perfect mix before mastering.</p>
+      </div>
+      <div class="box">
+        <h3>Mastering</h3>
+        <p>Get loud, clean, and industry-standard masters for all platforms.</p>
+      </div>
     </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Brixsten WaveCraft. All rights reserved.
+  </div>  <div class="section">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="box">
+        <h3>Single Track</h3>
+        <p>KES 1,000 - Fast turnaround (1-2 days).</p>
+      </div>
+      <div class="box">
+        <h3>EP / Album</h3>
+        <p>Starting from KES 4,000 - Custom rates available.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a href="https://wa.me/254758508303">Book Mastering on WhatsApp</a>
+    </div>
+  </div>  <footer>
+    &copy; 2025 Brixstem Soundcraft. All rights reserved.
   </footer>
 </body>
 </html>
