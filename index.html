@@ -3,69 +3,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brixstem Soundcraft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
     }
     header {
       background-color: #006401;
-      padding: 40px 20px;
+      color: white;
+      padding: 60px 20px 40px;
       text-align: center;
-      border-bottom: 5px solid #00ff5e;
     }
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin: 0;
     }
     header p {
       font-size: 1.2rem;
-      color: #e0ffe0;
+      margin-top: 10px;
+      color: #eaffea;
     }
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
-    .services, .pricing {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
     }
-    .box {
-      background-color: #111;
-      border-left: 5px solid #00ff5e;
-      padding: 20px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-left: 4px solid #006401;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       border-radius: 10px;
     }
-    .box h3 {
+    .card h3 {
       margin-top: 0;
-      color: #00ff5e;
+      color: #006401;
+      font-size: 1.3rem;
     }
     .cta {
       text-align: center;
       margin-top: 40px;
     }
     .cta a {
-      background-color: #00ff5e;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 8px;
+      background-color: #006401;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
     .cta a:hover {
-      background-color: #00cc4d;
+      background-color: #004d01;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #111;
+      padding: 30px;
+      background-color: #f1f1f1;
       font-size: 0.9rem;
-      color: #888;
+      color: #444;
     }
   </style>
 </head>
@@ -74,34 +83,34 @@
     <h1>Brixstem Soundcraft</h1>
     <p>Professional Song Mastering Services</p>
   </header>  <div class="section">
-    <h2>What We Do</h2>
-    <div class="services">
-      <div class="box">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
         <h3>Mix Review</h3>
-        <p>Detailed feedback to help you get the perfect mix before mastering.</p>
+        <p>Receive expert feedback on your mix to prepare for professional mastering.</p>
       </div>
-      <div class="box">
+      <div class="card">
         <h3>Mastering</h3>
-        <p>Get loud, clean, and industry-standard masters for all platforms.</p>
+        <p>Radio-ready mastering for all streaming platforms. Balanced, loud, and dynamic.</p>
       </div>
     </div>
   </div>  <div class="section">
     <h2>Pricing</h2>
-    <div class="pricing">
-      <div class="box">
+    <div class="grid">
+      <div class="card">
         <h3>Single Track</h3>
-        <p>KES 1,000 - Fast turnaround (1-2 days).</p>
+        <p>KES 1,000 — Delivered in 1–2 days with two free revisions.</p>
       </div>
-      <div class="box">
-        <h3>EP / Album</h3>
-        <p>Starting from KES 4,000 - Custom rates available.</p>
+      <div class="card">
+        <h3>EP or Album</h3>
+        <p>Starting at KES 4,000 — Get a custom quote based on your project.</p>
       </div>
     </div>
     <div class="cta">
-      <a href="https://wa.me/254758508303">Book Mastering on WhatsApp</a>
+      <a href="https://wa.me/254758508303">Book via WhatsApp</a>
     </div>
   </div>  <footer>
-    &copy; 2025 Brixstem Soundcraft. All rights reserved.
+    &copy; 2025 Brixstem Soundcraft. Built with care for true sound quality.
   </footer>
 </body>
 </html>
