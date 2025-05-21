@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brixsten WaveCraft</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #eaffea;
+      color: #004400;
+      overflow-x: hidden;
+    }
+    header {
+      background: #00cc66;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: #00cc66;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #00994d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brixsten WaveCraft</h1>
+    <p>Pro Mastering Studio — Sound Refined</p>
+  </header>
+
+  <div class="hero">
+    <h2>Let’s take your sound to the next level</h2>
+    <p>Industry-standard mastering. Fast. Affordable. Professional.</p>
+    <a href="#contact" class="button">Get Started</a>
+  </div>
+</body>
+</html>
