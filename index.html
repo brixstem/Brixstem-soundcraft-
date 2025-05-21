@@ -2,62 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brixsten WaveCraft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brixsten WaveCraft | Mastering Studio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #eaffea;
-      color: #004400;
-      overflow-x: hidden;
+      background: #f0fdf4;
+      color: #111;
+      scroll-behavior: smooth;
     }
     header {
-      background: #00cc66;
+      background-color: #065f46;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
-      animation: slideDown 1s ease-out;
+      animation: fadeInDown 1s ease-out;
     }
-    @keyframes slideDown {
-      from { transform: translateY(-100%); }
-      to { transform: translateY(0); }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #047857;
+      padding: 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .hero {
       text-align: center;
       padding: 3rem 1rem;
-      animation: fadeIn 2s ease-in;
+      animation: slideUp 1.5s ease-out;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    .button {
-      display: inline-block;
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .cta {
       margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background: #00cc66;
+    }
+    .cta a {
+      background-color: #10b981;
       color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 25px;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
       transition: background 0.3s ease;
     }
-    .button:hover {
-      background: #00994d;
+    .cta a:hover {
+      background-color: #059669;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #065f46;
+      color: white;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Brixsten WaveCraft</h1>
-    <p>Pro Mastering Studio — Sound Refined</p>
+    <p>Professional Song Mastering That Elevates Your Sound</p>
   </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Samples</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <div class="hero">
-    <h2>Let’s take your sound to the next level</h2>
-    <p>Industry-standard mastering. Fast. Affordable. Professional.</p>
-    <a href="#contact" class="button">Get Started</a>
+    <h2>Your Sound, Perfected</h2>
+    <p>We master your tracks with precision and creativity, ensuring they're ready for every platform — from Spotify to the big stage. Let your music speak professionally.</p>
+    <div class="cta">
+      <a href="#">Get Started</a>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Brixsten WaveCraft. All rights reserved.
+  </footer>
 </body>
 </html>
